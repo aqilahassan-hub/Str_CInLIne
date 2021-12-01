@@ -1,0 +1,26 @@
+#include <iostream>
+#include <string>
+#include <bits/stdc++.h>
+using namespace std;
+
+void ASCIISentence(string str)
+{
+	
+	int convert;
+	for (int i = 0; i < str.length(); i++) {
+		convert = str[i] - NULL;
+		cout << " "<< convert;
+	}
+	cout<<endl;
+}
+
+int main()
+{
+	string str = "Ishan is a good boy";
+	char str1[100];
+	cout << "ASCII Sentence:" << endl;
+	cin.getline(str1,'$');
+	cout<<str1;
+	ASCIISentence(str1);
+	return 0;
+}
